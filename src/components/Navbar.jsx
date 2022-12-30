@@ -9,7 +9,7 @@ export default function Navbar() {
     ];
     let [open, setOpen] = useState(false);
     return (
-        <header className=" md:ml-14 md:mr-10 m-[10px] mt-0">
+        <header className=" md:ml-14 md:mr-10 m-[10px] mt-0 bg-black">
             <div className="flex justify-between items-center">
                 <img src={Logo} alt="logo" className=" object-contain max-w-[134px] sm:max-w-[168px]" />
                 <ul className={`font-Inter font-semibold text-white bg-[#16161d] absolute md:bg-transparent w-full md:static md:flex md:gap-10 md:w-fit md:mt-0 z-[100] md:z-auto transition-all duration-500 ease-in ${open ? 'top-[3rem]' : 'top-[-490px]'}`} >
